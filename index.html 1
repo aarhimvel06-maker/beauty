@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Glow Beauty</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= WELCOME PAGE ================= -->
+
+    <div id="welcomePage">
+
+        <h1>🌸 Welcome to Glow Beauty 🌸</h1>
+
+        <p>Discover your beauty. Discover your glow ✨</p>
+
+        <button onclick="showLogin()">
+            Get Started 💖
+        </button>
+
+    </div>
+
+
+    <!-- ================= LOGIN PAGE ================= -->
+
+    <div id="loginPage">
+
+        <div class="login-box">
+
+            <h1>Glow Beauty 💄</h1>
+
+            <input
+                type="text"
+                id="user"
+                placeholder="Enter Username"
+            >
+
+            <input
+                type="password"
+                id="pass"
+                placeholder="Enter Password"
+            >
+
+            <button onclick="login()">
+                Login 💖
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= HOME PAGE ================= -->
+
+    <div id="homePage">
+
+        <header>
+
+            <h1>🌸 Glow Beauty 🌸</h1>
+
+            <button onclick="document.getElementById('products').scrollIntoView()">
+                Shop Now 🛍️
+            </button>
+
+        </header>
+
+
+        <!-- PRODUCTS -->
+
+        <section id="products">
+
+            <h2>💄 Our Beauty Products</h2>
+<section id="products">
+
+    <h2>💄 Our Beauty Products</h2>
+
+    <div class="products-container">
+
+        <!-- Lipstick -->
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=400"
+                 alt="Lipstick">
+
+            <h3>Lipstick 💄</h3>
+            <p>₹299</p>
+
+            <button onclick="addCart('Lipstick', 299)">
+                Add to Cart 🛒
+            </button>
+        </div>
+
+
+        <!-- Foundation -->
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400"
+                 alt="Foundation">
+
+            <h3>Foundation ✨</h3>
+            <p>₹499</p>
+
+            <button onclick="addCart('Foundation', 499)">
+                Add to Cart 🛒
+            </button>
+        </div>
+
+
+        <!-- Face Cream -->
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?w=400"
+                 alt="Face Cream">
+
+            <h3>Face Cream 🌸</h3>
+            <p>₹399</p>
+
+            <button onclick="addCart('Face Cream', 399)">
+                Add to Cart 🛒
+            </button>
+        </div>
+
+
+        <!-- Mascara -->
+        <div class="product">
+            <img
+    src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=400"
+    alt="Mascara"
+>
+            <h3>Mascara 👁️</h3>
+            <p>₹349</p>
+
+            <button onclick="addCart('Mascara', 349)">
+                Add to Cart 🛒
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+    </div>
+
+</div>
+
+            
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CART -->
+
+        <section id="cart">
+
+            <h2>🛒 Your Cart</h2>
+
+            <ul id="cartItems"></ul>
+
+            <p>
+                Items:
+                <span id="count">0</span>
+            </p>
+
+            <p>
+                Total:
+                ₹<span id="total">0</span>
+            </p>
+
+            <button onclick="placeOrder()">
+                Place Order 💖
+            </button>
+
+        </section>
+
+    </div>
+
+
+    <!-- ================= SUCCESS PAGE ================= -->
+
+    <div id="successPage">
+
+        <h1>🎉 Order Placed Successfully! 🎉</h1>
+
+        <p>Thank you for shopping with Glow Beauty 💖</p>
+
+        <button onclick="location.reload()">
+            Back to Home 🏠
+        </button>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
